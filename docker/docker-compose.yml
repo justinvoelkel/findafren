@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    container_name: find_a_fren
+    image: httpd:2.4
+    ports:
+      - "8888:80"
+    volumes:
+      - ../:/usr/local/apache2/htdocs
